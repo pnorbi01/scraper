@@ -7,8 +7,8 @@ module.exports = function(app, db){
             res.status(200).set('Content-Type', 'application/json').send(formattedData);
         } 
         catch (error) {
-            console.error('Hiba az adatlekérdezés során:', error);
-            res.status(500).json({ error: 'Hiba az adatlekérdezés során' });
+            console.error('Error while requesting data:', error);
+            res.status(500).json({ error: 'Error while requesting data' });
         }
     });
 
@@ -39,8 +39,8 @@ module.exports = function(app, db){
             res.status(200).set('Content-Type', 'application/json').send(formattedData);
         } 
         catch (error) {
-            console.error('Hiba a keresés során:', error);
-            res.status(500).json({ error: 'Hiba a keresés során' });
+            console.error('Error while searching:', error);
+            res.status(500).json({ error: 'Error while searching' });
         }
     });
 }

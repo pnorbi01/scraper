@@ -8,5 +8,5 @@ const PORT = process.env.PORT || 3000;
   
 app.listen(PORT, async () => {
     await scrape();
-    console.log(`A szerver fut a http://localhost:${PORT}/api/list címen.`);
+    console.log(`The server is running on http://localhost:${PORT}/api/products link.`);
 });

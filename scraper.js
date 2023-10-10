@@ -288,7 +288,7 @@ const insertIntoDatabase = (smartPhones) => {
 function convertHUFToEUR(priceInHUF) {
     const eurExchangeRate = 388;
     if (eurExchangeRate === undefined) {
-        throw new Error('Az árfolyam nincs még beállítva. Kérlek, várj a lekérdezés befejezéséig.');
+        throw new Error('The exchange rate is not set yet. Please wait for the query to complete.');
     }
 
     const price = priceInHUF / eurExchangeRate;
@@ -298,7 +298,7 @@ function convertHUFToEUR(priceInHUF) {
 function convertRSDToEUR(priceInRSD) {
     const eurExchangeRate = 117;
     if (eurExchangeRate === undefined) {
-        throw new Error('Az árfolyam nincs még beállítva. Kérlek, várj a lekérdezés befejezéséig.');
+        throw new Error('The exchange rate is not set yet. Please wait for the query to complete.');
     }
 
     const price = priceInRSD / eurExchangeRate;
